@@ -45,7 +45,7 @@ const About = () => {
           >
             <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl border border-border-theme">
               <img
-                src="/public/sara-carvalho-02.jpg"
+                src="/sara-carvalho-02.jpg"
                 alt="Sara Carvalho"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

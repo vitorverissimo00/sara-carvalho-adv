@@ -90,7 +90,7 @@ const Home = () => {
             >
               <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border border-border-theme">
                 <img
-                  src="/public/sara-carvalho.jpg"
+                  src="/sara-carvalho.jpg"
                   alt="Sara Carvalho - Advogada Previdenciarista"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -301,7 +301,7 @@ const Home = () => {
             <div className="order-1 lg:order-2">
               <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl rotate-3 border-4 border-border-theme">
                 <img
-                  src="/public/sara-carvalho-02.jpg"
+                  src="/sara-carvalho-02.jpg"
                   alt="Escritório Sara Carvalho"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
