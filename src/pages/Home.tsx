@@ -1,6 +1,13 @@
-import { motion } from 'motion/react';
-import { ArrowRight, CheckCircle2, ShieldCheck, Users, Clock, FileText } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { motion } from "motion/react";
+import {
+  ArrowRight,
+  CheckCircle2,
+  ShieldCheck,
+  Users,
+  Clock,
+  FileText,
+} from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -17,47 +24,49 @@ const Home = () => {
                 visible: {
                   opacity: 1,
                   transition: {
-                    staggerChildren: 0.2
-                  }
-                }
+                    staggerChildren: 0.2,
+                  },
+                },
               }}
             >
-              <motion.span 
+              <motion.span
                 variants={{
                   hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0 }
+                  visible: { opacity: 1, y: 0 },
                 }}
                 className="inline-block py-1 px-3 rounded-full bg-gold/10 text-gold text-xs font-bold uppercase tracking-widest mb-6"
               >
                 Especialista em Direito Previdenciário
               </motion.span>
-              <motion.h1 
+              <motion.h1
                 variants={{
                   hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0 }
+                  visible: { opacity: 1, y: 0 },
                 }}
                 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-foreground leading-tight mb-6"
               >
                 Protegendo o seu futuro e garantindo o seu descanso.
               </motion.h1>
-              <motion.p 
+              <motion.p
                 variants={{
                   hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0 }
+                  visible: { opacity: 1, y: 0 },
                 }}
                 className="text-lg text-foreground/70 mb-8 leading-relaxed max-w-xl"
               >
-                Consultoria jurídica especializada para você conquistar sua aposentadoria com segurança, clareza e o valor que você realmente merece.
+                Consultoria jurídica especializada para você conquistar sua
+                aposentadoria com segurança, clareza e o valor que você
+                realmente merece.
               </motion.p>
-              <motion.div 
+              <motion.div
                 variants={{
                   hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0 }
+                  visible: { opacity: 1, y: 0 },
                 }}
                 className="flex flex-col sm:flex-row gap-4"
               >
                 <a
-                  href="https://wa.me/5500000000000"
+                  href="https://wa.me/55032984320601"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gold text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-gold-dark transition-all flex items-center justify-center gap-2 shadow-lg shadow-gold/20"
@@ -81,7 +90,7 @@ const Home = () => {
             >
               <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border border-border-theme">
                 <img
-                  src="https://picsum.photos/seed/lawyer/800/1000"
+                  src="/public/sara-carvalho.jpg"
                   alt="Sara Carvalho - Advogada Previdenciarista"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -93,8 +102,12 @@ const Home = () => {
                   <ShieldCheck className="w-8 h-8 text-gold" />
                 </div>
                 <div>
-                  <p className="text-xs text-foreground/50 font-bold uppercase tracking-widest">Atendimento</p>
-                  <p className="text-lg font-serif font-bold text-foreground">100% Seguro</p>
+                  <p className="text-xs text-foreground/50 font-bold uppercase tracking-widest">
+                    Atendimento
+                  </p>
+                  <p className="text-lg font-serif font-bold text-foreground">
+                    100% Seguro
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -106,9 +119,15 @@ const Home = () => {
       <section className="bg-surface py-10 border-y border-border-theme">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center md:justify-between items-center gap-8 opacity-60 grayscale">
-             <div className="flex items-center gap-2 text-foreground font-serif font-bold text-xl italic">OAB/UF 00.000</div>
-             <div className="text-foreground font-bold tracking-widest uppercase text-sm">Atendimento em todo o Brasil</div>
-             <div className="text-foreground font-bold tracking-widest uppercase text-sm">Especialista INSS</div>
+            <div className="flex items-center gap-2 text-foreground font-serif font-bold text-xl italic">
+              OAB/UF 00.000
+            </div>
+            <div className="text-foreground font-bold tracking-widest uppercase text-sm">
+              Atendimento em todo o Brasil
+            </div>
+            <div className="text-foreground font-bold tracking-widest uppercase text-sm">
+              Especialista INSS
+            </div>
           </div>
         </div>
       </section>
@@ -117,17 +136,46 @@ const Home = () => {
       <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6">Como posso te ajudar?</h2>
-            <p className="text-foreground/60">Oferecemos suporte completo em todas as etapas da sua jornada previdenciária.</p>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6">
+              Como posso te ajudar?
+            </h2>
+            <p className="text-foreground/60">
+              Oferecemos suporte completo em todas as etapas da sua jornada
+              previdenciária.
+            </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: 'Aposentadoria por Idade', icon: Clock, desc: 'Análise completa para garantir o melhor benefício na idade certa.' },
-              { title: 'Planejamento Previdenciário', icon: FileText, desc: 'Prepare-se hoje para receber o valor máximo amanhã.' },
-              { title: 'BPC / LOAS', icon: Users, desc: 'Auxílio para idosos e pessoas com deficiência de baixa renda.' },
-              { title: 'Benefícios por Incapacidade', icon: ShieldCheck, desc: 'Suporte em caso de doença ou acidente que impeça o trabalho.' },
-              { title: 'Pensão por Morte', icon: Users, desc: 'Garantindo o amparo financeiro para os dependentes.' },
-              { title: 'Revisão de Benefícios', icon: CheckCircle2, desc: 'Seu benefício está baixo? Podemos analisar possíveis erros.' },
+              {
+                title: "Aposentadoria por Idade",
+                icon: Clock,
+                desc: "Análise completa para garantir o melhor benefício na idade certa.",
+              },
+              {
+                title: "Planejamento Previdenciário",
+                icon: FileText,
+                desc: "Prepare-se hoje para receber o valor máximo amanhã.",
+              },
+              {
+                title: "BPC / LOAS",
+                icon: Users,
+                desc: "Auxílio para idosos e pessoas com deficiência de baixa renda.",
+              },
+              {
+                title: "Benefícios por Incapacidade",
+                icon: ShieldCheck,
+                desc: "Suporte em caso de doença ou acidente que impeça o trabalho.",
+              },
+              {
+                title: "Pensão por Morte",
+                icon: Users,
+                desc: "Garantindo o amparo financeiro para os dependentes.",
+              },
+              {
+                title: "Revisão de Benefícios",
+                icon: CheckCircle2,
+                desc: "Seu benefício está baixo? Podemos analisar possíveis erros.",
+              },
             ].map((service, idx) => (
               <motion.div
                 key={idx}
@@ -141,9 +189,16 @@ const Home = () => {
                 <div className="bg-gold/5 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gold/10 transition-colors">
                   <service.icon className="w-7 h-7 text-foreground group-hover:text-gold transition-colors" />
                 </div>
-                <h3 className="text-xl font-serif font-bold text-foreground mb-4">{service.title}</h3>
-                <p className="text-foreground/60 text-sm leading-relaxed mb-6">{service.desc}</p>
-                <Link to="/servicos" className="text-gold font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
+                <h3 className="text-xl font-serif font-bold text-foreground mb-4">
+                  {service.title}
+                </h3>
+                <p className="text-foreground/60 text-sm leading-relaxed mb-6">
+                  {service.desc}
+                </p>
+                <Link
+                  to="/servicos"
+                  className="text-gold font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all"
+                >
                   Saiba mais <ArrowRight className="w-4 h-4" />
                 </Link>
               </motion.div>
@@ -156,27 +211,43 @@ const Home = () => {
       <section className="py-24 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6">Como funciona o atendimento?</h2>
-            <p className="text-foreground/60">Um processo transparente e seguro para você acompanhar cada passo.</p>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6">
+              Como funciona o atendimento?
+            </h2>
+            <p className="text-foreground/60">
+              Um processo transparente e seguro para você acompanhar cada passo.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12 relative">
             {/* Connecting Line */}
-            <motion.div 
+            <motion.div
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.5 }}
               className="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-gold/10 -translate-y-1/2 z-0 origin-left"
             ></motion.div>
-            
+
             {[
-              { step: '01', title: 'Consulta Inicial', desc: 'Conversamos para entender os detalhes do seu caso e tirar suas primeiras dúvidas.' },
-              { step: '02', title: 'Análise Técnica', desc: 'Analisamos toda a sua documentação e histórico para traçar a melhor estratégia.' },
-              { step: '03', title: 'Protocolo e Acompanhamento', desc: 'Damos entrada no seu pedido e acompanhamos cada etapa até a decisão final.' },
+              {
+                step: "01",
+                title: "Consulta Inicial",
+                desc: "Conversamos para entender os detalhes do seu caso e tirar suas primeiras dúvidas.",
+              },
+              {
+                step: "02",
+                title: "Análise Técnica",
+                desc: "Analisamos toda a sua documentação e histórico para traçar a melhor estratégia.",
+              },
+              {
+                step: "03",
+                title: "Protocolo e Acompanhamento",
+                desc: "Damos entrada no seu pedido e acompanhamos cada etapa até a decisão final.",
+              },
             ].map((item, idx) => (
-              <motion.div 
-                key={idx} 
+              <motion.div
+                key={idx}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -186,8 +257,12 @@ const Home = () => {
                 <div className="w-16 h-16 bg-gold text-white font-serif font-bold text-2xl rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-lg shadow-gold/20">
                   {item.step}
                 </div>
-                <h3 className="text-xl font-serif font-bold text-foreground mb-4">{item.title}</h3>
-                <p className="text-foreground/60 text-sm leading-relaxed">{item.desc}</p>
+                <h3 className="text-xl font-serif font-bold text-foreground mb-4">
+                  {item.title}
+                </h3>
+                <p className="text-foreground/60 text-sm leading-relaxed">
+                  {item.desc}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -199,13 +274,22 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <span className="text-gold font-bold uppercase tracking-widest text-xs mb-4 block">Sobre a Advogada</span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-8">Dra. Sara Carvalho</h2>
+              <span className="text-gold font-bold uppercase tracking-widest text-xs mb-4 block">
+                Sobre a Advogada
+              </span>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-8">
+                Dra. Sara Carvalho
+              </h2>
               <p className="text-foreground/70 leading-relaxed mb-6">
-                Especialista em Direito Previdenciário com foco em garantir que cada trabalhador receba exatamente o que lhe é de direito. Minha atuação é pautada na transparência, ética e no atendimento humanizado.
+                Especialista em Direito Previdenciário com foco em garantir que
+                cada trabalhador receba exatamente o que lhe é de direito. Minha
+                atuação é pautada na transparência, ética e no atendimento
+                humanizado.
               </p>
               <p className="text-foreground/70 leading-relaxed mb-10">
-                Acredito que a segurança jurídica é a base para um futuro tranquilo. Por isso, dedico minha carreira a simplificar a burocracia do INSS para meus clientes.
+                Acredito que a segurança jurídica é a base para um futuro
+                tranquilo. Por isso, dedico minha carreira a simplificar a
+                burocracia do INSS para meus clientes.
               </p>
               <Link
                 to="/sobre"
@@ -217,7 +301,7 @@ const Home = () => {
             <div className="order-1 lg:order-2">
               <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl rotate-3 border-4 border-border-theme">
                 <img
-                  src="https://picsum.photos/seed/office/800/800"
+                  src="/public/sara-carvalho-02.jpg"
                   alt="Escritório Sara Carvalho"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -239,10 +323,11 @@ const Home = () => {
             Não deixe o seu futuro nas mãos da sorte.
           </h2>
           <p className="text-foreground/70 text-lg mb-12">
-            Cada dia de espera pode significar dinheiro perdido. Comece hoje mesmo a sua análise previdenciária com quem entende do assunto.
+            Cada dia de espera pode significar dinheiro perdido. Comece hoje
+            mesmo a sua análise previdenciária com quem entende do assunto.
           </p>
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/55032984320601"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex bg-gold text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-gold-dark transition-all shadow-2xl shadow-gold/20"

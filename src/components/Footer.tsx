@@ -28,7 +28,7 @@ const Footer = () => {
               Especialista em Direito Previdenciário, dedicada a garantir que você receba o que é seu por direito com segurança e transparência.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="p-2 bg-foreground/5 rounded-full hover:bg-gold hover:text-white transition-colors">
+              <a href="https://www.instagram.com/advsaracarvalho/" target="_blank" rel="noopener noreferrer" className="p-2 bg-foreground/5 rounded-full hover:bg-gold hover:text-white transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="#" className="p-2 bg-foreground/5 rounded-full hover:bg-gold hover:text-white transition-colors">

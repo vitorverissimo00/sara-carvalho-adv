@@ -49,7 +49,7 @@ const Header = () => {
             <div className="flex items-center gap-4 border-l border-border-theme pl-8">
               <ThemeToggle />
               <a
-                href="https://wa.me/5500000000000"
+                href="https://wa.me/55032984320601"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gold text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-gold-dark transition-colors flex items-center gap-2"
@@ -97,7 +97,7 @@ const Header = () => {
               ))}
               <div className="pt-4">
                 <a
-                  href="https://wa.me/5500000000000"
+                  href="https://wa.me/55032984320601"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-gold text-white px-6 py-4 rounded-xl text-center font-bold flex items-center justify-center gap-2"

@@ -101,7 +101,7 @@ const FAQ = () => {
           <h3 className="text-2xl font-serif font-bold mb-4">Ainda tem dúvidas?</h3>
           <p className="text-foreground/70 mb-8">Cada caso é único. Fale diretamente conosco para uma análise personalizada.</p>
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/55032984320601"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gold text-white px-8 py-4 rounded-xl font-bold hover:bg-gold-dark transition-all"

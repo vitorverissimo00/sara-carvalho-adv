@@ -69,7 +69,7 @@ const ServiceDetail = () => {
                 Cada caso tem suas particularidades. Fale conosco para uma análise inicial do seu caso.
               </p>
               <a
-                href="https://wa.me/5500000000000"
+                href="https://wa.me/55032984320601"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex bg-[#25D366] text-white px-8 py-4 rounded-2xl font-bold hover:opacity-90 transition-opacity gap-2 items-center"
