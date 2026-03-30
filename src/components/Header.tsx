@@ -1,23 +1,24 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Scale } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
-import ThemeToggle from './ThemeToggle';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X, Phone, Scale } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const location = useLocation();
 
   const navLinks = [
-    { name: 'Início', path: '/' },
-    { name: 'Sobre', path: '/sobre' },
-    { name: 'Áreas de Atuação', path: '/servicos' },
-    { name: 'Dúvidas', path: '/faq' },
-    { name: 'Contato', path: '/contato' },
+    { name: "Início", path: "/" },
+    { name: "Sobre", path: "/sobre" },
+    { name: "Áreas de Atuação", path: "/servicos" },
+    { name: "Dicas", path: "/dicas" },
+    { name: "Dúvidas", path: "/faq" },
+    { name: "Contato", path: "/contato" },
   ];
 
   return (
-    <motion.header 
+    <motion.header
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -28,8 +29,12 @@ const Header = () => {
           <Link to="/" className="flex items-center gap-2 group">
             <Scale className="w-8 h-8 text-gold group-hover:scale-110 transition-transform" />
             <div className="flex flex-col">
-              <span className="text-xl font-serif font-bold text-foreground leading-none">Sara Carvalho</span>
-              <span className="text-[10px] uppercase tracking-widest text-gold font-semibold">Advogada Previdenciarista</span>
+              <span className="text-xl font-serif font-bold text-foreground leading-none">
+                Sara Carvalho
+              </span>
+              <span className="text-[10px] uppercase tracking-widest text-gold font-semibold">
+                Advogada Previdenciarista
+              </span>
             </div>
           </Link>
 
@@ -40,7 +45,9 @@ const Header = () => {
                 key={link.path}
                 to={link.path}
                 className={`text-sm font-medium transition-colors hover:text-gold ${
-                  location.pathname === link.path ? 'text-gold' : 'text-foreground/80'
+                  location.pathname === link.path
+                    ? "text-gold"
+                    : "text-foreground/80"
                 }`}
               >
                 {link.name}
@@ -67,7 +74,11 @@ const Header = () => {
               className="p-2 text-foreground"
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -78,7 +89,7 @@ const Header = () => {
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
+            animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-background border-b border-border-theme overflow-hidden"
           >
@@ -89,7 +100,9 @@ const Header = () => {
                   to={link.path}
                   onClick={() => setIsOpen(false)}
                   className={`block px-3 py-4 text-base font-medium border-b border-border-theme ${
-                    location.pathname === link.path ? 'text-gold' : 'text-foreground/80'
+                    location.pathname === link.path
+                      ? "text-gold"
+                      : "text-foreground/80"
                   }`}
                 >
                   {link.name}
