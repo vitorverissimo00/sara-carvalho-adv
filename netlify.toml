@@ -1,0 +1,36 @@
+[build]
+  # Comando para fazer o build
+  command = "npm run build:production"
+  
+  # Diretório de saída
+  publish = "dist"
+
+[build.environment]
+  # Versão do Node.js
+  NODE_VERSION = "18"
+
+# Headers para otimização
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Headers para assets estáticos (cache)
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Headers para HTML (sem cache)
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+# Redirect para React Router (SPA)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,14 +1,17 @@
 {
-  "name": "react-example",
+  "name": "sara-carvalho-advocacia",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "build:production": "npm run clean && npm run build",
+    "netlify:deploy": "netlify deploy --prod --dir=dist",
+    "deploy": "npm run build:production && npm run netlify:deploy"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",
