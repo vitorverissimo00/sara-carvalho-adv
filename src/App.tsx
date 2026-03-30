@@ -3,18 +3,18 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import ScrollToTop from './components/ScrollToTop';
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
-import FAQ from './pages/FAQ';
-import Privacy from './pages/Privacy';
-import Cookies from './pages/Cookies';
-import Terms from './pages/Terms';
-import ServiceDetail from './pages/ServiceDetail';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import ScrollToTop from "./components/ScrollToTop";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import FAQ from "./pages/FAQ";
+import Privacy from "./pages/Privacy";
+import Cookies from "./pages/Cookies";
+import Terms from "./pages/Terms";
+import InstagramFeed from "./pages/InstagramFeed";
 
 export default function App() {
   return (
@@ -25,7 +25,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="sobre" element={<About />} />
           <Route path="servicos" element={<Services />} />
-          <Route path="servicos/:slug" element={<ServiceDetail />} />
+          <Route path="dicas" element={<InstagramFeed />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="contato" element={<Contact />} />
           <Route path="privacidade" element={<Privacy />} />
